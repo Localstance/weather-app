@@ -1,0 +1,11 @@
+<h1>Weather-app</h1>
+<p>В настоящей версии приложения можно добавить любой город в коллекцию?получить данные от forecast, которые будут сохранены в localStorage. Привязал дождь, но он достаточно неплохо загружает... проверить можно в консоли <code>citiesGalleryItem.togglePrecipitation()</code> или запустить вручную независимо от погоды в городе <code>precipitation.start()</code> и <code>precipitation.stop()</code>.</p>
+<p>Необходимо довести до ума логику рендеринга. Next step: архитектура.</p>
+<h2>Проблемы (issue), над которыми веду работу:</h2>
+<ol>
+  <li>Разделить всё по MVC. Переношу всё на observer pattern.</li>
+  <li>Необходимо добавить логику включения и выключения осадков, изменение фона в зависимости от времени суток (проверить можно методами <code>precipitation.start()</code>, <code>precipitation.stop()</code>, <code>app.changeBg('night')</code>, <code>app.changeBg('day')</code>, <code>app.changeBg('evening')</code> or <code>app.changeBg('morning')</code> )</li>
+  <li>Добавить хранение настроек в хранилище.</li>
+  <li>Модульность.</li>
+  <li>...fix markup...</li>
+</ol>

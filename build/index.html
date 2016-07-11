@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Weather App</title>
+  <link rel="stylesheet" media="screen" href="css/all.css">
+  <link rel="stylesheet" href="fonts/icomoon/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body class="evening">
+<div id="wrapper" >
+  <span class="open-menu-btn icon-menu"></span>
+  <ul class="bxslider"></ul>
+  <aside>
+    <div class="places">
+      <div class="places-menu">
+        <span class="menu-btn icon-menu"></span>
+        <div class="autocomplete ui-widget hidden">
+          <label for="places-input"></label>
+          <input type="text" id="places-input"/>
+        </div>
+        <div class="icon-menu-group">
+          <span class="add-btn icon-add"></span>
+          <span class="delete-btn icon-delete"></span>
+          <span class="add-to-list-btn icon-check hooded"></span>
+        </div>
+      </div>
+      <div class="places-list">
+        <h3 class="no-result-msg hooded">No result</h3>
+        <ul></ul>
+      </div>
+    </div>
+    <div class="settings">
+      <div class="settings-menu">
+        <div class="switch-units">
+          <span class="celsius">&#176;C</span>
+          <span class="fahrenheit">&#176;F</span>
+        </div>
+        <span class="settings-icon icon-settings"></span>
+      </div>
+      <div class="settings-show-for">
+        <div class="head-text">
+          <h3>SHOW WEATHER FOR</h3>
+          <span><span class="quantity">7</span> days</span>
+        </div>
+        <div class="scroll-widget">
+          <div class="slider slider-show-more"></div>
+        </div>
+      </div>
+      <div class="settings-update-every">
+        <div class="head-text">
+          <h3>UPDATE WEATHER EVERY</h3>
+          <span><span class="quantity">15</span> min</span>
+        </div>
+        <div class="scroll-widget">
+          <div class="slider slider-update-time"></div>
+        </div>
+      </div>
+    </div>
+  </aside>
+  <div class="slider-cities hidden">
+    <span class="icon-active-window"></span>
+    <span class="icon-next-window"></span>
+    <span class="icon-next-window"></span>
+    <span class="icon-next-window"></span>
+  </div>
+
+  <div class="sun-handler">
+    <div class="sun"></div>
+  </div>
+  <canvas id="canvas" class="stopSnow"></canvas>
+</div>
+
+<script src="scripts/vendor/jquery-2.1.4.min.js"></script>
+<script src="scripts/vendor/jquery-ui-1.11.4.min.js"></script>
+<script src="scripts/vendor/jquery.bxslider.min.js"></script>
+<script src="scripts/vendor/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="scripts/bundle.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyByNaA_53f8yyr0JnAX91sZgaFQ6vqOMBc&signed_in=true&libraries=places"
+        async defer></script>
+</body>
+</html>

@@ -1,0 +1,144 @@
+@font-face {
+    font-family: 'icomoon';
+    src:    url('fonts/icomoon.eot?9pougi');
+    src:    url('fonts/icomoon.eot?9pougi#iefix') format('embedded-opentype'),
+        url('fonts/icomoon.ttf?9pougi') format('truetype'),
+        url('fonts/icomoon.woff?9pougi') format('woff'),
+        url('fonts/icomoon.svg?9pougi#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-add:before {
+    content: "\e900";
+}
+.icon-almost-full:before {
+    content: "\e901";
+}
+.icon-almost-old:before {
+    content: "\e902";
+}
+.icon-cloudy:before {
+    content: "\e903";
+}
+.icon-cloudy-day:before {
+    content: "\e904";
+}
+.icon-delete:before {
+    content: "\e905";
+}
+.icon-dust:before {
+    content: "\e906";
+}
+.icon-empty-moon:before {
+    content: "\e907";
+}
+.icon-fog:before {
+    content: "\e908";
+}
+.icon-full-moon:before {
+    content: "\e909";
+}
+.icon-grow-moon:before {
+    content: "\e90a";
+}
+.icon-heavy-rain:before {
+    content: "\e90b";
+}
+.icon-heavy-snow:before {
+    content: "\e90c";
+}
+.icon-humidity:before {
+    content: "\e90d";
+}
+.icon-menu:before {
+    content: "\e90e";
+}
+.icon-night:before {
+    content: "\e90f";
+}
+.icon-night-cloudy:before {
+    content: "\e910";
+}
+.icon-night-less-cloudy:before {
+    content: "\e911";
+}
+.icon-old-moon:before {
+    content: "\e912";
+}
+.icon-party-cloudy:before {
+    content: "\e913";
+}
+.icon-rain:before {
+    content: "\e914";
+}
+.icon-rain-snow:before {
+    content: "\e915";
+}
+.icon-settings:before {
+    content: "\e916";
+}
+.icon-shover:before {
+    content: "\e917";
+}
+.icon-sleet:before {
+    content: "\e918";
+}
+.icon-sleet-rain:before {
+    content: "\e919";
+}
+.icon-snow:before {
+    content: "\e91a";
+}
+.icon-sunny:before {
+    content: "\e91b";
+}
+.icon-sunrise:before {
+    content: "\e91c";
+}
+.icon-sunset:before {
+    content: "\e91d";
+}
+.icon-thundershowers-sunny:before {
+    content: "\e91e";
+}
+.icon-thunderstorm:before {
+    content: "\e91f";
+}
+.icon-wind:before {
+    content: "\e920";
+}
+.icon-wind-direction:before {
+    content: "\e921";
+}
+.icon-young-moon:before {
+    content: "\e922";
+}
+.icon-active-window:before {
+    content: "\e923";
+}
+.icon-next-window:before {
+    content: "\e924";
+}
+.icon-refresh:before {
+    content: "\e925";
+}
+.icon-check:before {
+    content: "\e926";
+}
+

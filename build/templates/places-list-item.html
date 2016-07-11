@@ -1,0 +1,17 @@
+<li data-place-id="<%- place_id %>">
+  <span class="place-weather icon-<%= icon %>"></span>
+  <span class="place-temperature" data-tempF="<%= currentTempF %>">
+    <span class="temp-c"> <%= currentTempC %>&#176;</span>
+    <span class="temp-f hooded"><%= currentTempF %>&#176;</span>
+  </span>
+  <div class="place-weather-wrap">
+    <span class="place-name"><%= cityName %></span>
+    <span class="place-weather-text">// <%= weatherNowText %></span>
+  </div>
+  <div class="place-checkbox-wrap">
+    <label>
+      <input type="checkbox" class="place-checkbox">
+      <span class="place-checkbox-label"></span>
+    </label>
+  </div>
+</li>

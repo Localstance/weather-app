@@ -1,0 +1,88 @@
+<li class="gallery-item" data-lat="<%= lat %>" data-lng="<%= lng %>" data-place-id="<%= placeId %>">
+  <div class="weather-wrapper" data-location="<%= cityName %>">
+    <section class="weather">
+      <div class="weather-block">
+        <div class="weather-block-section">
+          <span class="current-time"><%= current_time %></span>
+          <span class="refresh-icon icon-refresh"></span>
+          <h1 class="current-place"><%= cityName %></h1>
+          <span class="current-day"><%= current_day %>, </span>
+          <span class="current-date"><%= current_month %> <%= current_date %></span>
+        </div>
+        <div class="weather-block-section flex-section">
+          <div class="flex-section">
+            <span class="weather-icon icon-<%= weather_icon %>"></span>
+              <span class="weather-block-section-icons">
+                <span class="temperature" data-tempF="<%= current_temp_f %>">
+                  <span class="temp-c"><%= current_temp_c %>&#176;</span>
+                  <span class="temp-f hooded"><%= current_temp_f %>&#176;</span>
+                </span>
+                <span class="weather-now-text">//<%= weather_now_text %></span>
+              </span>
+          </div>
+            <span class="weather-block-section-icons">
+              <span class="moon-phase icon-<%= moon_icon %>"></span>
+              <span class="moonrise-time"><%= sunrise_time %></span>
+            </span>
+        </div>
+      </div>
+      <div class="weather-today">
+        <div class="weather-today-each-hour">
+          <ul class="weather-list">
+            <% _.each(hourly_data, function(data){ %>
+            <li>
+              <span class="list-time"><%= data.time %></span>
+              <span class="list-weather icon-<%= data.icon %>"></span>
+              <span class="list-temperature" data-tempF="<%= data.tempF %>">
+                <span class="temp-c"><%= data.tempC %>&#176;</span>
+                <span class="temp-f hooded"><%= data.tempF %>&#176;</span>
+              </span>
+            </li>
+            <% }); %>
+          </ul>
+        </div>
+        <div class="weather-today-options">
+          <div class="options-block">
+            <span class="icon-humidity options-icon"></span>
+            <span class="humidity-data icon"><%= humidity %>%</span>
+          </div>
+          <div class="options-block">
+            <span class="icon-wind-direction options-icon"></span>
+            <span class="wind-direction-data"><%= windSpeed %><sub>m/c</sub></span>
+          </div>
+          <div class="options-block">
+            <span class="icon-sunrise options-icon"></span>
+            <span class="sunrise-data"><%= sunrise_time %></span>
+          </div>
+          <div class="options-block">
+            <span class="icon-sunset options-icon"></span>
+            <span class="sunset-data"><%= sunset_time %></span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="week-graph">
+      <div class="week-wrapper">
+        <ul class="week-list">
+          <% _.each(week_data, function(day){ %>
+          <li>
+            <span class="day-name"><%= day.dayName %></span>
+            <span class="day-weather icon-<%= day.icon %>"></span>
+            <div class="graph-wrap">
+              <span class="low-temp" data-tempF="<%= day.tempMinF %>">
+                <span class="temp-c"><%= day.tempMinC %>&#176;</span>
+                <span class="temp-f hooded"><%= day.tempMinF %>&#176;</span>
+              </span>
+              <span class="day-graph"></span>
+              <span class="high-temp" data-tempF="<%= day.tempMaxF %>">
+                <span class="temp-c"><%= day.tempMaxC %>&#176;</span>
+                <span class="temp-f hooded"><%= day.tempMaxF %>&#176;</span>
+              </span>
+            </div>
+          </li>
+          <% }); %>
+        </ul>
+      </div>
+    </section>
+  </div>
+</li>
